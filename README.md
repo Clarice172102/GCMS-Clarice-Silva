@@ -1,7 +1,7 @@
 # GCMS-Clarice-Silva
 Repositório pessoal da disciplina GCMS
 
-COLABORADORES
+## Colaboradores
 
 - Clarice Queiroz (@Clarice172102, dona)
 - Wallace Gabriel da Silva (@wgabbriel, colaborador)
