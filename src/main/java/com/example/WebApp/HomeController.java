@@ -22,11 +22,11 @@ public class HomeController {
     
     @RequestMapping("/clarice")
     public @ResponseBody String greetingClarice() {
-        return "Hello, Clarice!";
+        return "Hello, Clarice esse é o seu clone !";
     }
     @RequestMapping("/clarice1")
     public @ResponseBody String greeting1Clarice() {
-        return "Hello, Clarice teste adicionado!";
+        return "Hello, Clarice teste!";
         
     }
 
