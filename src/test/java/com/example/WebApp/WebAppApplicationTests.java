@@ -39,4 +39,13 @@ class WebAppApplicationTests {
 
     }
 
+    @Test
+    public void shouldReturnDefaultMessage2() throws Exception {
+        this.mockMvc.perform(get("/clarice1"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(content()
+                        .string(containsString("Hello, Clarice teste adicionado!")));
+
+    }
+
 }
