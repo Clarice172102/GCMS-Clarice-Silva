@@ -51,7 +51,7 @@ class WebAppApplicationTests {
     public void testHotfixEndpoint() throws Exception {
         this.mockMvc.perform(get("/hotfix"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello from MAIN hotfix version!")));
+                .andExpect(content().string(containsString("Hello from MAIN hotfix version! Hello, Hotfix!")));
     }
 
 }
