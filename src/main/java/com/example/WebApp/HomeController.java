@@ -12,23 +12,32 @@ import org.springframework.web.bind.annotation.ResponseBody;
  *
  * @author ALUNO
  */
-
 @Controller
 public class HomeController {
+
     @RequestMapping("/")
-    public @ResponseBody String greeting() {
+    public @ResponseBody
+    String greeting() {
         return "Hello, World!";
     }
-    
+
     @RequestMapping("/clarice")
-    public @ResponseBody String greetingClarice() {
+    public @ResponseBody
+    String greetingClarice() {
         return "Hello, Clarice esse é o seu clone !";
     }
+
     @RequestMapping("/clarice1")
-    public @ResponseBody String greeting1Clarice() {
+    public @ResponseBody
+    String greeting1Clarice() {
         return "Oi, Clarice! Teste adicionado. Hello, Clarice teste!";
 
-        
+    }
+
+    @RequestMapping("/hotfix")
+    public @ResponseBody
+    String greetingHotfix() {
+        return "Hello, Hotfix!";
     }
 
 }
