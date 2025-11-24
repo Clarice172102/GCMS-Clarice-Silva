@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.test.web.servlet.MockMvc;
 
-
 @SpringBootTest
 @AutoConfigureMockMvc
 class WebAppApplicationTests {
@@ -29,7 +28,7 @@ class WebAppApplicationTests {
                         .string(containsString("Hello, World!")));
 
     }
-    
+
     @Test
     public void shouldReturnDefaultMessage1() throws Exception {
         this.mockMvc.perform(get("/clarice"))
@@ -46,8 +45,13 @@ class WebAppApplicationTests {
                 .andExpect(content()
                         .string(containsString("Oi, Clarice teste adicionado! Hello, Clarice teste!")));
 
+    }
 
-        
+    @Test
+    public void testHotfixEndpoint() throws Exception {
+        this.mockMvc.perform(get("/hotfix"))
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString("Hello, Hotfix!")));
     }
 
 }
