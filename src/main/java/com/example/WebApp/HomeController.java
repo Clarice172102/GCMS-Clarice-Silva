@@ -29,7 +29,7 @@ public class HomeController {
 
     @RequestMapping("/clarice1")
     public @ResponseBody
-    String greeting1Clarice() {
+    String greetingClarice1() {
         return "Oi, Clarice! Teste adicionado. Hello, Clarice teste!";
 
     }
