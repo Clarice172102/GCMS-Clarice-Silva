@@ -27,9 +27,9 @@ public class HomeController {
         return "Hello, Clarice esse é o seu clone !";
     }
 
-    @RequestMapping("/cla")
+    @RequestMapping("/clarice1")
     public @ResponseBody
-    String greetingClarice1() {
+    String greeting1Clarice() {
         return "Oi, Clarice! Teste adicionado. Hello, Clarice teste!";
 
     }
