@@ -17,6 +17,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      image: docker:alunatads/pratica6:1-imagem-docker-clarice
     permissions:
       contents: read
 
